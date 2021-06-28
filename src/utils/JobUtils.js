@@ -7,7 +7,7 @@ module.exports = {
         const dueDate = createdDate.setDate(dueDay);
     
         const timeDiffMs = dueDate -  Date.now();
-        const dayDiff = Math.floor(timeDiffMs / 86400000);
+        const dayDiff = Math.ceil(timeDiffMs / 86400000);
     
         return dayDiff;
     },
